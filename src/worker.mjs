@@ -194,7 +194,7 @@ async function handleCompletions2(req, apiKey) {
       "Content-Type": "application/json",
       "Authorization": `Bearer $apiKey`,
     },
-    body: JSON.stringify(req),
+    body: req,
   });
 
   let body = response.body;
